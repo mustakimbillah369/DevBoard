@@ -7,3 +7,5 @@ function bgRandomColor() {
   }
   return color;
 }
+
+// 
