@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevBoard</title>
+
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -21,13 +22,11 @@
       </div>
 
       <div class="flex gap-3">
-
         <div class="flex gap-3 border rounded-full p-3">
 
           <img class="w-8 h-8" src="assets/checkbox.png" alt="">
-          <h1 class="text-xl font-bold" id="output">23</h1>
+          <p class="text-xl font-bold" id="task-count">23</p>
         </div>
-
         <div id="bg-btn" tabindex="0" role="button" class="btn btn-ghost btn-circle avatar mt-3">
           <div class="w-10 rounded-full">
             <img alt="" src="assets/theme-btn.png" />
@@ -38,10 +37,11 @@
     </div>
   </header>
 
-  <body>
+  <main>
     <section class="flex my-6 gap-4">
 
       <section class="w-[80%] border">
+
         <section class="m-2 flex">
 
           <div class="flex border w-[20%] bg-gray-100 rounded-xl m-4 justify-center gap-4 p-8">
@@ -50,11 +50,11 @@
             </div>
             <div class="">
               <p class="font-semibold">Task Assigned</p>
-              <p id="" class="font-bold text-2xl">05</p>
+              <p id="task-pending" class="font-bold text-2xl">06</p>
             </div>
           </div>
 
-          <div id="" class="p-8 border w-[60%] gap-10 rounded-xl m-3 bg-linear-to-r from-blue-600 to-blue-200 flex">
+          <div id="blog" class="p-8 border w-[60%] gap-10 rounded-xl m-4 bg-linear-to-r from-blue-600 to-blue-200 flex">
             <div>
               <img src="assets/board.png" alt="">
             </div>
@@ -66,13 +66,154 @@
 
           <div class="flex border w-[20%] bg-gray-100 rounded-xl m-4 justify-center gap-4 p-8">
             <div class="mt-6">
-              <img src="assets/calender.png" alt="">
+              <img class="w-12" src="assets/calender.png" alt="">
             </div>
-            <div class="">
-              
+
+            <div>
+              <p id="date-box" class="font-bold text-lg">Loading...</p>
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="m-6">
+
+          <div class="flex gap-4">
+
+            <div class="card bg-base-100 w-[33.33%] shadow-sm bg-gray-100">
+              <div class="m-6">
+                <div class="bg-white px-4 py-2 rounded-full font-semibold inline-block">
+                  ShopEase
+                </div>
+                <h1 class="font-bold text-xl mt-4">Fix Mobile Button Issue </h1>
+                <div class="bg-white px-6 py-4 rounded-box mt-8">
+                  Debug using Chrome DevTools, check for overlapping
+                </div>
+                <div class="flex justify-between mt-16">
+                  <div>
+                    <p class="text-gray-500">Deadline</p>
+                    <p class="font-bold">21 March 2025</p>
+                  </div>
+                  <div>
+                    <button class="btn text-white bg-blue-600 px-8 mt-2">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 w-[33.33%] shadow-sm bg-gray-100">
+              <div class="m-6">
+                <div class="bg-white px-4 py-2 rounded-full font-semibold inline-block">
+                  ShopEase
+                </div>
+                <h1 class="font-bold text-xl mt-4">Fix Mobile Button Issue </h1>
+                <div class="bg-white px-6 py-4 rounded-box mt-8">
+                  Debug using Chrome DevTools, check for overlapping
+                </div>
+                <div class="flex justify-between mt-16">
+                  <div>
+                    <p class="text-gray-500">Deadline</p>
+                    <p class="font-bold">21 March 2025</p>
+                  </div>
+                  <div>
+                    <button class="btn text-white bg-blue-600 px-8 mt-2">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card bg-base-100 w-[33.33%] shadow-sm bg-gray-100">
+              <div class="m-6">
+                <div class="bg-white px-4 py-2 rounded-full font-semibold inline-block">
+                  ShopEase
+                </div>
+                <h1 class="font-bold text-xl mt-4">Fix Mobile Button Issue </h1>
+                <div class="bg-white px-6 py-4 rounded-box mt-8">
+                  Debug using Chrome DevTools, check for overlapping
+                </div>
+                <div class="flex justify-between mt-16">
+                  <div>
+                    <p class="text-gray-500">Deadline</p>
+                    <p class="font-bold">21 March 2025</p>
+                  </div>
+                  <div>
+                    <button class="btn text-white bg-blue-600 px-8 mt-2">Completed</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          
+
+
+          <div class="flex gap-4 mt-8">
+
+            <div class="card bg-base-100 w-[33.33%] shadow-sm bg-gray-100">
+              <div class="m-6">
+                <div class="bg-white px-4 py-2 rounded-full font-semibold inline-block">
+                  ShopEase
+                </div>
+                <h1 class="font-bold text-xl mt-4">Fix Mobile Button Issue </h1>
+                <div class="bg-white px-6 py-4 rounded-box mt-8">
+                  Debug using Chrome DevTools, check for overlapping
+                </div>
+                <div class="flex justify-between mt-16">
+                  <div>
+                    <p class="text-gray-500">Deadline</p>
+                    <p class="font-bold">21 March 2025</p>
+                  </div>
+                  <div>
+                    <button class="btn text-white bg-blue-600 px-8 mt-2">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 w-[33.33%] shadow-sm bg-gray-100">
+              <div class="m-6">
+                <div class="bg-white px-4 py-2 rounded-full font-semibold inline-block">
+                  ShopEase
+                </div>
+                <h1 class="font-bold text-xl mt-4">Fix Mobile Button Issue </h1>
+                <div class="bg-white px-6 py-4 rounded-box mt-8">
+                  Debug using Chrome DevTools, check for overlapping
+                </div>
+                <div class="flex justify-between mt-16">
+                  <div>
+                    <p class="text-gray-500">Deadline</p>
+                    <p class="font-bold">21 March 2025</p>
+                  </div>
+                  <div>
+                    <button class="btn text-white bg-blue-600 px-8 mt-2">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card bg-base-100 w-[33.33%] shadow-sm bg-gray-100">
+              <div class="m-6">
+                <div class="bg-white px-4 py-2 rounded-full font-semibold inline-block">
+                  ShopEase
+                </div>
+                <h1 class="font-bold text-xl mt-4">Fix Mobile Button Issue </h1>
+                <div class="bg-white px-6 py-4 rounded-box mt-8">
+                  Debug using Chrome DevTools, check for overlapping
+                </div>
+                <div class="flex justify-between mt-16">
+                  <div>
+                    <p class="text-gray-500">Deadline</p>
+                    <p class="font-bold">21 March 2025</p>
+                  </div>
+                  <div>
+                    <button class="btn text-white bg-blue-600 px-8 mt-2">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </section>
       </section>
 
@@ -80,13 +221,13 @@
 
       </section>
     </section>
-  </body>
+  </main>
 
   <footer>
 
   </footer>
   <script src="javascript/utilities.js"></script>
-  <script src="javascript/navbar.js"></script>
+  <script src="javascript/script.js"></script>
 </body>
 
 </html>
