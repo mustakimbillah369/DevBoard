@@ -26,7 +26,7 @@ btns.forEach(button => {
     const taskTitle = button.closest('.card').querySelector('.task-title').innerText;
 
     const newDiv = document.createElement('div');
-    newDiv.className = 'font-semibold bg-gray-300 p-4 rounded-lg mb-3';
+    newDiv.className = 'font-semibold bg-gray-300 p-4 border rounded-xl mb-3';
     newDiv.innerText = `You have completed the task "${taskTitle}" at 03:48:56 AM.`
 
     taskDiv.appendChild(newDiv);
