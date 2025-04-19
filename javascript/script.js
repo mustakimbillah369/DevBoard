@@ -15,3 +15,12 @@ const now = new Date();
 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 const formattedDate = now.toLocaleString('en-us', options);
 dateBox.textContent = "" + formattedDate;
+
+//
+
+const btn = document.getElementById('complete');
+
+btn.addEventListener('click', function () {
+  alert("Task Completed!!!");
+  btn.disabled = true;
+})
