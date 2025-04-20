@@ -30,7 +30,7 @@ btns.forEach(button => {
     newDiv.innerText = `You have completed the task "${taskTitle}" at 03:48:56 AM.`
 
     taskDiv.appendChild(newDiv);
-});
+  });
 });
 
 // 
@@ -54,6 +54,6 @@ completedBtn.forEach(btn => {
 // 
 const clearBtn = document.getElementById('clear-history-btn');
 const taskdiv = document.getElementById('task-div');
-clearBtn.addEventListener('click', function ()  {
+clearBtn.addEventListener('click', function () {
   taskdiv.innerHTML = "";
 })

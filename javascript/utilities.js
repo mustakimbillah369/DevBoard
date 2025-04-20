@@ -8,4 +8,4 @@ function bgRandomColor() {
   return color;
 }
 
-// 
+
