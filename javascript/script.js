@@ -48,6 +48,11 @@ completedBtn.forEach(btn => {
     let Pending = parseInt(taskPending.innerText);
     taskPending.innerText = Pending - 1;
     btn.disabled = true;
+
+    if (parseInt(taskPending.innerText) === 0) {
+      alert("Congratulations!!! You have Completed all the current task!"); 
+    }
+
   });
 });
 
